@@ -19,6 +19,7 @@
 		D6E592BB29ABF4FE004F663D /* ZIPFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = D6E592BA29ABF4FE004F663D /* ZIPFoundation */; };
 		D6E592BF29ABF79C004F663D /* Alert++.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E592BD29ABF79C004F663D /* Alert++.swift */; };
 		D6E592C029ABF79C004F663D /* Haptic++.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E592BE29ABF79C004F663D /* Haptic++.swift */; };
+		D6E592C329ABFDE2004F663D /* Zip in Frameworks */ = {isa = PBXBuildFile; productRef = D6E592C229ABFDE2004F663D /* Zip */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6E592C329ABFDE2004F663D /* Zip in Frameworks */,
 				D6E592BB29ABF4FE004F663D /* ZIPFoundation in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -167,6 +169,7 @@
 			name = FileSwitcherConvert;
 			packageProductDependencies = (
 				D6E592BA29ABF4FE004F663D /* ZIPFoundation */,
+				D6E592C229ABFDE2004F663D /* Zip */,
 			);
 			productName = FileSwitcherConvert;
 			productReference = D6E5928829ABE21D004F663D /* FileSwitcherConvert.app */;
@@ -242,6 +245,7 @@
 			mainGroup = D6E5927F29ABE21D004F663D;
 			packageReferences = (
 				D6E592B929ABF4FE004F663D /* XCRemoteSwiftPackageReference "ZIPFoundation" */,
+				D6E592C129ABFDE2004F663D /* XCRemoteSwiftPackageReference "Zip" */,
 			);
 			productRefGroup = D6E5928929ABE21D004F663D /* Products */;
 			projectDirPath = "";
@@ -625,6 +629,14 @@
 				minimumVersion = 0.9.9;
 			};
 		};
+		D6E592C129ABFDE2004F663D /* XCRemoteSwiftPackageReference "Zip" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/marmelroy/Zip.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -632,6 +644,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = D6E592B929ABF4FE004F663D /* XCRemoteSwiftPackageReference "ZIPFoundation" */;
 			productName = ZIPFoundation;
+		};
+		D6E592C229ABFDE2004F663D /* Zip */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D6E592C129ABFDE2004F663D /* XCRemoteSwiftPackageReference "Zip" */;
+			productName = Zip;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

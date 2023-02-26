@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import ZIPFoundation
+import Zip
 
 class Fsp {
     func open() {
