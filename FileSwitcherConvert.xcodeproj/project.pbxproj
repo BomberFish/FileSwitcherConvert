@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D6E5928C29ABE21D004F663D /* FileSwitcherConvertApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E5928B29ABE21D004F663D /* FileSwitcherConvertApp.swift */; };
+		D6E5928E29ABE21D004F663D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E5928D29ABE21D004F663D /* ContentView.swift */; };
+		D6E5929029ABE21F004F663D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6E5928F29ABE21F004F663D /* Assets.xcassets */; };
+		D6E5929329ABE21F004F663D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6E5929229ABE21F004F663D /* Preview Assets.xcassets */; };
+		D6E5929D29ABE21F004F663D /* FileSwitcherConvertTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E5929C29ABE21F004F663D /* FileSwitcherConvertTests.swift */; };
+		D6E592A729ABE21F004F663D /* FileSwitcherConvertUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E592A629ABE21F004F663D /* FileSwitcherConvertUITests.swift */; };
+		D6E592A929ABE21F004F663D /* FileSwitcherConvertUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E592A829ABE21F004F663D /* FileSwitcherConvertUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D6E5929929ABE21F004F663D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D6E5928029ABE21D004F663D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D6E5928729ABE21D004F663D;
+			remoteInfo = FileSwitcherConvert;
+		};
+		D6E592A329ABE21F004F663D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D6E5928029ABE21D004F663D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D6E5928729ABE21D004F663D;
+			remoteInfo = FileSwitcherConvert;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D6E5928829ABE21D004F663D /* FileSwitcherConvert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FileSwitcherConvert.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6E5928B29ABE21D004F663D /* FileSwitcherConvertApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileSwitcherConvertApp.swift; sourceTree = "<group>"; };
+		D6E5928D29ABE21D004F663D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D6E5928F29ABE21F004F663D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D6E5929229ABE21F004F663D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D6E5929829ABE21F004F663D /* FileSwitcherConvertTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FileSwitcherConvertTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6E5929C29ABE21F004F663D /* FileSwitcherConvertTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileSwitcherConvertTests.swift; sourceTree = "<group>"; };
+		D6E592A229ABE21F004F663D /* FileSwitcherConvertUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FileSwitcherConvertUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6E592A629ABE21F004F663D /* FileSwitcherConvertUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileSwitcherConvertUITests.swift; sourceTree = "<group>"; };
+		D6E592A829ABE21F004F663D /* FileSwitcherConvertUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileSwitcherConvertUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D6E5928529ABE21D004F663D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6E5929529ABE21F004F663D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6E5929F29ABE21F004F663D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D6E5927F29ABE21D004F663D = {
+			isa = PBXGroup;
+			children = (
+				D6E5928A29ABE21D004F663D /* FileSwitcherConvert */,
+				D6E5929B29ABE21F004F663D /* FileSwitcherConvertTests */,
+				D6E592A529ABE21F004F663D /* FileSwitcherConvertUITests */,
+				D6E5928929ABE21D004F663D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D6E5928929ABE21D004F663D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D6E5928829ABE21D004F663D /* FileSwitcherConvert.app */,
+				D6E5929829ABE21F004F663D /* FileSwitcherConvertTests.xctest */,
+				D6E592A229ABE21F004F663D /* FileSwitcherConvertUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D6E5928A29ABE21D004F663D /* FileSwitcherConvert */ = {
+			isa = PBXGroup;
+			children = (
+				D6E5928B29ABE21D004F663D /* FileSwitcherConvertApp.swift */,
+				D6E5928D29ABE21D004F663D /* ContentView.swift */,
+				D6E5928F29ABE21F004F663D /* Assets.xcassets */,
+				D6E5929129ABE21F004F663D /* Preview Content */,
+			);
+			path = FileSwitcherConvert;
+			sourceTree = "<group>";
+		};
+		D6E5929129ABE21F004F663D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D6E5929229ABE21F004F663D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D6E5929B29ABE21F004F663D /* FileSwitcherConvertTests */ = {
+			isa = PBXGroup;
+			children = (
+				D6E5929C29ABE21F004F663D /* FileSwitcherConvertTests.swift */,
+			);
+			path = FileSwitcherConvertTests;
+			sourceTree = "<group>";
+		};
+		D6E592A529ABE21F004F663D /* FileSwitcherConvertUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D6E592A629ABE21F004F663D /* FileSwitcherConvertUITests.swift */,
+				D6E592A829ABE21F004F663D /* FileSwitcherConvertUITestsLaunchTests.swift */,
+			);
+			path = FileSwitcherConvertUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D6E5928729ABE21D004F663D /* FileSwitcherConvert */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6E592AC29ABE21F004F663D /* Build configuration list for PBXNativeTarget "FileSwitcherConvert" */;
+			buildPhases = (
+				D6E5928429ABE21D004F663D /* Sources */,
+				D6E5928529ABE21D004F663D /* Frameworks */,
+				D6E5928629ABE21D004F663D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FileSwitcherConvert;
+			productName = FileSwitcherConvert;
+			productReference = D6E5928829ABE21D004F663D /* FileSwitcherConvert.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D6E5929729ABE21F004F663D /* FileSwitcherConvertTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6E592AF29ABE21F004F663D /* Build configuration list for PBXNativeTarget "FileSwitcherConvertTests" */;
+			buildPhases = (
+				D6E5929429ABE21F004F663D /* Sources */,
+				D6E5929529ABE21F004F663D /* Frameworks */,
+				D6E5929629ABE21F004F663D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D6E5929A29ABE21F004F663D /* PBXTargetDependency */,
+			);
+			name = FileSwitcherConvertTests;
+			productName = FileSwitcherConvertTests;
+			productReference = D6E5929829ABE21F004F663D /* FileSwitcherConvertTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D6E592A129ABE21F004F663D /* FileSwitcherConvertUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6E592B229ABE21F004F663D /* Build configuration list for PBXNativeTarget "FileSwitcherConvertUITests" */;
+			buildPhases = (
+				D6E5929E29ABE21F004F663D /* Sources */,
+				D6E5929F29ABE21F004F663D /* Frameworks */,
+				D6E592A029ABE21F004F663D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D6E592A429ABE21F004F663D /* PBXTargetDependency */,
+			);
+			name = FileSwitcherConvertUITests;
+			productName = FileSwitcherConvertUITests;
+			productReference = D6E592A229ABE21F004F663D /* FileSwitcherConvertUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D6E5928029ABE21D004F663D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					D6E5928729ABE21D004F663D = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					D6E5929729ABE21F004F663D = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = D6E5928729ABE21D004F663D;
+					};
+					D6E592A129ABE21F004F663D = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = D6E5928729ABE21D004F663D;
+					};
+				};
+			};
+			buildConfigurationList = D6E5928329ABE21D004F663D /* Build configuration list for PBXProject "FileSwitcherConvert" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D6E5927F29ABE21D004F663D;
+			productRefGroup = D6E5928929ABE21D004F663D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D6E5928729ABE21D004F663D /* FileSwitcherConvert */,
+				D6E5929729ABE21F004F663D /* FileSwitcherConvertTests */,
+				D6E592A129ABE21F004F663D /* FileSwitcherConvertUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D6E5928629ABE21D004F663D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6E5929329ABE21F004F663D /* Preview Assets.xcassets in Resources */,
+				D6E5929029ABE21F004F663D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6E5929629ABE21F004F663D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6E592A029ABE21F004F663D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D6E5928429ABE21D004F663D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6E5928E29ABE21D004F663D /* ContentView.swift in Sources */,
+				D6E5928C29ABE21D004F663D /* FileSwitcherConvertApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6E5929429ABE21F004F663D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6E5929D29ABE21F004F663D /* FileSwitcherConvertTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6E5929E29ABE21F004F663D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6E592A729ABE21F004F663D /* FileSwitcherConvertUITests.swift in Sources */,
+				D6E592A929ABE21F004F663D /* FileSwitcherConvertUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D6E5929A29ABE21F004F663D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D6E5928729ABE21D004F663D /* FileSwitcherConvert */;
+			targetProxy = D6E5929929ABE21F004F663D /* PBXContainerItemProxy */;
+		};
+		D6E592A429ABE21F004F663D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D6E5928729ABE21D004F663D /* FileSwitcherConvert */;
+			targetProxy = D6E592A329ABE21F004F663D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D6E592AA29ABE21F004F663D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D6E592AB29ABE21F004F663D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D6E592AD29ABE21F004F663D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FileSwitcherConvert/Preview Content\"";
+				DEVELOPMENT_TEAM = 8JKVMYCRTJ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.bomberfish.FileSwitcherConvert;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D6E592AE29ABE21F004F663D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FileSwitcherConvert/Preview Content\"";
+				DEVELOPMENT_TEAM = 8JKVMYCRTJ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.bomberfish.FileSwitcherConvert;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D6E592B029ABE21F004F663D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8JKVMYCRTJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.bomberfish.FileSwitcherConvertTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FileSwitcherConvert.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FileSwitcherConvert";
+			};
+			name = Debug;
+		};
+		D6E592B129ABE21F004F663D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8JKVMYCRTJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.bomberfish.FileSwitcherConvertTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FileSwitcherConvert.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FileSwitcherConvert";
+			};
+			name = Release;
+		};
+		D6E592B329ABE21F004F663D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8JKVMYCRTJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.bomberfish.FileSwitcherConvertUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FileSwitcherConvert;
+			};
+			name = Debug;
+		};
+		D6E592B429ABE21F004F663D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8JKVMYCRTJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.bomberfish.FileSwitcherConvertUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FileSwitcherConvert;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D6E5928329ABE21D004F663D /* Build configuration list for PBXProject "FileSwitcherConvert" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6E592AA29ABE21F004F663D /* Debug */,
+				D6E592AB29ABE21F004F663D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D6E592AC29ABE21F004F663D /* Build configuration list for PBXNativeTarget "FileSwitcherConvert" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6E592AD29ABE21F004F663D /* Debug */,
+				D6E592AE29ABE21F004F663D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D6E592AF29ABE21F004F663D /* Build configuration list for PBXNativeTarget "FileSwitcherConvertTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6E592B029ABE21F004F663D /* Debug */,
+				D6E592B129ABE21F004F663D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D6E592B229ABE21F004F663D /* Build configuration list for PBXNativeTarget "FileSwitcherConvertUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6E592B329ABE21F004F663D /* Debug */,
+				D6E592B429ABE21F004F663D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D6E5928029ABE21D004F663D /* Project object */;
+}
