@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import ZIPFoundation
 
 class Cowperation {
     func open() {
