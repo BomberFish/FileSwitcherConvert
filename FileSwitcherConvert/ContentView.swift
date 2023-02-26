@@ -28,8 +28,7 @@ struct ContentView: View {
             .toolbar {
                 Button(
                     action: {
-                        print("show info")
-                        
+                        UIApplication.shared.alert(title: "FileSwitcherConvert", body: "Made with ❤️ by BomberFish.\n Thanks sourcelocation for reverse-engineering the .fsp format")
                     },
                     label: {
                         Image(systemName: "info.circle")
