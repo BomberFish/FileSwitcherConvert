@@ -13,22 +13,41 @@ struct ContentView: View {
         NavigationView {
             List {
                 Section {
-                    Label("Import .cowperation", systemImage: "square.and.arrow.down")
-                    Label("Export .cowperation", systemImage: "square.and.arrow.up")
+                    Button(action: {
+                        Cowperation.open()
+                    }, label: {
+                        Label("Import .cowperation", systemImage: "square.and.arrow.down")
+                    })
+                    Button(action: {
+                        Cowperation.export()
+                    }, label: {
+                        Label("Export .cowperation", systemImage: "square.and.arrow.up")
+                    })
+                    
                 } header: {
                     Label("Cowabunga", systemImage: "doc.zipper")
                 }
                 
                 Section {
-                    Label("Import .fsp", systemImage: "square.and.arrow.down")
-                    Label("Export .fsp", systemImage: "square.and.arrow.up")
+                    Button(action: {
+                        Fsp.open()
+                    }, label: {
+                        Label("Import .fsp", systemImage: "square.and.arrow.down")
+                    })
+                    Button(action: {
+                        Fsp.export()
+                    }, label: {
+                        Label("Export .fsp", systemImage: "square.and.arrow.up")
+                    })
+                    
                 } header: {
                     Label("FileSwitcherPro", systemImage: "doc.zipper")
                 }
                 
                 Section {
                     LinkCell(imageName: "bomberfish", url: "https://github.com/Bomberfish", title: "BomberFish", contribution: "Main Developer", circle: true)
-                    LinkCell(imageName: "suslocation", url: "https://github.com/sourcelocation", title: "sourcelocation", contribution: "Reverse-engineering the .fsp format", circle: true)
+                    LinkCell(imageName: "suslocation", url: "https://github.com/sourcelocation", title: "sourcelocation", contribution: "Reverse-engineering the .fsp format, various code snippets", circle: true)
+                    LinkCell(imageName: "markrenaud", url: "https://github.com/markrenaud", title: "Mark Renaud", contribution: "FilePicker", circle: true)
                 } header: {
                     Label("Credits", systemImage: "heart.fill")
                 }

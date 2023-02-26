@@ -9,10 +9,10 @@ import Foundation
 import Zip
 
 class Fsp {
-    func open() {
-        // open file
+    static func open() {
+        Common.fileFromPicker(fileType: "fsp")
     }
-    func export() {
+    static func export() {
         // write to disk
     }
 }

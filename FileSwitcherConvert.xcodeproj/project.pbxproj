@@ -20,6 +20,8 @@
 		D6E592BF29ABF79C004F663D /* Alert++.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E592BD29ABF79C004F663D /* Alert++.swift */; };
 		D6E592C029ABF79C004F663D /* Haptic++.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E592BE29ABF79C004F663D /* Haptic++.swift */; };
 		D6E592C329ABFDE2004F663D /* Zip in Frameworks */ = {isa = PBXBuildFile; productRef = D6E592C229ABFDE2004F663D /* Zip */; };
+		D6E592C729AC0210004F663D /* FilePicker in Frameworks */ = {isa = PBXBuildFile; productRef = D6E592C629AC0210004F663D /* FilePicker */; };
+		D6E592C929AC027D004F663D /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E592C829AC027D004F663D /* Common.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,7 @@
 		D6E592B729ABF049004F663D /* CowperationUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CowperationUtils.swift; sourceTree = "<group>"; };
 		D6E592BD29ABF79C004F663D /* Alert++.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Alert++.swift"; sourceTree = "<group>"; };
 		D6E592BE29ABF79C004F663D /* Haptic++.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Haptic++.swift"; sourceTree = "<group>"; };
+		D6E592C829AC027D004F663D /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6E592C729AC0210004F663D /* FilePicker in Frameworks */,
 				D6E592C329ABFDE2004F663D /* Zip in Frameworks */,
 				D6E592BB29ABF4FE004F663D /* ZIPFoundation in Frameworks */,
 			);
@@ -155,6 +159,7 @@
 			children = (
 				D6E592B529ABF03F004F663D /* FspUtils.swift */,
 				D6E592B729ABF049004F663D /* CowperationUtils.swift */,
+				D6E592C829AC027D004F663D /* Common.swift */,
 			);
 			path = FileHandlers;
 			sourceTree = "<group>";
@@ -178,6 +183,7 @@
 			packageProductDependencies = (
 				D6E592BA29ABF4FE004F663D /* ZIPFoundation */,
 				D6E592C229ABFDE2004F663D /* Zip */,
+				D6E592C629AC0210004F663D /* FilePicker */,
 			);
 			productName = FileSwitcherConvert;
 			productReference = D6E5928829ABE21D004F663D /* FileSwitcherConvert.app */;
@@ -254,6 +260,7 @@
 			packageReferences = (
 				D6E592B929ABF4FE004F663D /* XCRemoteSwiftPackageReference "ZIPFoundation" */,
 				D6E592C129ABFDE2004F663D /* XCRemoteSwiftPackageReference "Zip" */,
+				D6E592C529AC0210004F663D /* XCRemoteSwiftPackageReference "FilePicker" */,
 			);
 			productRefGroup = D6E5928929ABE21D004F663D /* Products */;
 			projectDirPath = "";
@@ -303,6 +310,7 @@
 				D6E592B829ABF049004F663D /* CowperationUtils.swift in Sources */,
 				D6E5928E29ABE21D004F663D /* ContentView.swift in Sources */,
 				D6E5928C29ABE21D004F663D /* FileSwitcherConvertApp.swift in Sources */,
+				D6E592C929AC027D004F663D /* Common.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,7 +397,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -443,7 +451,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -464,11 +472,13 @@
 				DEVELOPMENT_TEAM = 8JKVMYCRTJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -493,11 +503,13 @@
 				DEVELOPMENT_TEAM = 8JKVMYCRTJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -645,6 +657,14 @@
 				minimumVersion = 2.0.0;
 			};
 		};
+		D6E592C529AC0210004F663D /* XCRemoteSwiftPackageReference "FilePicker" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/markrenaud/FilePicker";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -657,6 +677,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = D6E592C129ABFDE2004F663D /* XCRemoteSwiftPackageReference "Zip" */;
 			productName = Zip;
+		};
+		D6E592C629AC0210004F663D /* FilePicker */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D6E592C529AC0210004F663D /* XCRemoteSwiftPackageReference "FilePicker" */;
+			productName = FilePicker;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

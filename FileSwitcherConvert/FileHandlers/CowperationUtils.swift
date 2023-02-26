@@ -9,10 +9,10 @@ import Foundation
 import ZIPFoundation
 
 class Cowperation {
-    func open() {
-        // open file
+    static func open() {
+        Common.fileFromPicker(fileType: "cowperation")
     }
-    func export() {
+    static func export() {
         // write to disk
     }
 }
