@@ -17,6 +17,8 @@
 		D6E592B629ABF03F004F663D /* FspUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E592B529ABF03F004F663D /* FspUtils.swift */; };
 		D6E592B829ABF049004F663D /* CowperationUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E592B729ABF049004F663D /* CowperationUtils.swift */; };
 		D6E592BB29ABF4FE004F663D /* ZIPFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = D6E592BA29ABF4FE004F663D /* ZIPFoundation */; };
+		D6E592BF29ABF79C004F663D /* Alert++.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E592BD29ABF79C004F663D /* Alert++.swift */; };
+		D6E592C029ABF79C004F663D /* Haptic++.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E592BE29ABF79C004F663D /* Haptic++.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		D6E592A829ABE21F004F663D /* FileSwitcherConvertUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileSwitcherConvertUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D6E592B529ABF03F004F663D /* FspUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FspUtils.swift; sourceTree = "<group>"; };
 		D6E592B729ABF049004F663D /* CowperationUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CowperationUtils.swift; sourceTree = "<group>"; };
+		D6E592BD29ABF79C004F663D /* Alert++.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Alert++.swift"; sourceTree = "<group>"; };
+		D6E592BE29ABF79C004F663D /* Haptic++.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Haptic++.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,7 @@
 			children = (
 				D6E5928B29ABE21D004F663D /* FileSwitcherConvertApp.swift */,
 				D6E5928D29ABE21D004F663D /* ContentView.swift */,
+				D6E592BC29ABF78C004F663D /* Extensions */,
 				D6E592B529ABF03F004F663D /* FspUtils.swift */,
 				D6E592B729ABF049004F663D /* CowperationUtils.swift */,
 				D6E5928F29ABE21F004F663D /* Assets.xcassets */,
@@ -133,6 +138,15 @@
 				D6E592A829ABE21F004F663D /* FileSwitcherConvertUITestsLaunchTests.swift */,
 			);
 			path = FileSwitcherConvertUITests;
+			sourceTree = "<group>";
+		};
+		D6E592BC29ABF78C004F663D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D6E592BD29ABF79C004F663D /* Alert++.swift */,
+				D6E592BE29ABF79C004F663D /* Haptic++.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,6 +285,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6E592C029ABF79C004F663D /* Haptic++.swift in Sources */,
+				D6E592BF29ABF79C004F663D /* Alert++.swift in Sources */,
 				D6E592B629ABF03F004F663D /* FspUtils.swift in Sources */,
 				D6E592B829ABF049004F663D /* CowperationUtils.swift in Sources */,
 				D6E5928E29ABE21D004F663D /* ContentView.swift in Sources */,
