@@ -25,6 +25,18 @@ struct ContentView: View {
                     Label("FileSwitcherPro", systemImage: "doc.zipper")
                 }
             }
+            .toolbar {
+                Button(
+                    action: {
+                        print("show info")
+                        
+                    },
+                    label: {
+                        Image(systemName: "info.circle")
+                        
+                    }
+                )
+            }
             .navigationTitle("FileSwitcherConvert")
         }
     }
