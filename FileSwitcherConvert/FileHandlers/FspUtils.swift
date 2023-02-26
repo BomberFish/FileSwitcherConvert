@@ -1,18 +1,18 @@
 //
-//  CowperationUtils.swift
+//  FspUtils.swift
 //  FileSwitcherConvert
 //
 //  Created by Hariz Shirazi on 2023-02-26.
 //
 
 import Foundation
-import ZIPFoundation
+import Zip
 
-class Cowperation {
+class Fsp {
     func open() {
         // open file
     }
-    func write() {
+    func export() {
         // write to disk
     }
 }

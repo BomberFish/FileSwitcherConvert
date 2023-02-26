@@ -109,8 +109,7 @@
 				D6E5928B29ABE21D004F663D /* FileSwitcherConvertApp.swift */,
 				D6E5928D29ABE21D004F663D /* ContentView.swift */,
 				D6E592BC29ABF78C004F663D /* Extensions */,
-				D6E592B529ABF03F004F663D /* FspUtils.swift */,
-				D6E592B729ABF049004F663D /* CowperationUtils.swift */,
+				D6E592C429ABFFB3004F663D /* FileHandlers */,
 				D6E5928F29ABE21F004F663D /* Assets.xcassets */,
 				D6E5929129ABE21F004F663D /* Preview Content */,
 			);
@@ -149,6 +148,15 @@
 				D6E592BE29ABF79C004F663D /* Haptic++.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D6E592C429ABFFB3004F663D /* FileHandlers */ = {
+			isa = PBXGroup;
+			children = (
+				D6E592B529ABF03F004F663D /* FspUtils.swift */,
+				D6E592B729ABF049004F663D /* CowperationUtils.swift */,
+			);
+			path = FileHandlers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
