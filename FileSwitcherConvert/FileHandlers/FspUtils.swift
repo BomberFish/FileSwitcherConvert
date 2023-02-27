@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 import Zip
+import ZipFoundation
 
 class Fsp {
     static func open(urls: [URL]) {
@@ -80,10 +81,25 @@ class Fsp {
         print(targetFile as Any)
         let id = infoJson!["ID"] as? String
         print(id as Any)
+        let author = infoJson!["Share_Author"] as? String
+        print(author as Any)
+        let location = infoJson!["LocationRequire"] as? Bool
+        print(location as Any)
         let convertedPath = FileManager.default.temporaryDirectory.appendingPathComponent("cow_from_fsp\(UUID().uuidString)")
         try! FileManager.default.createDirectory(at: convertedPath, withIntermediateDirectories: true)
         try! FileManager.default.copyItem(at: fspDir!.appendingPathComponent("Files/\(id ?? "")/Default"), to: convertedPath.appendingPathComponent(".backup"))
         try! FileManager.default.copyItem(at: fspDir!.appendingPathComponent("Files/\(id ?? "")/Replace"), to: convertedPath.appendingPathComponent("Replace.file"))
+        // TODO: Support more operation types
+        let plistdata: [String:Any] = [
+            "FilePath":targetFile,
+            "ReplacingPath":"Replace.file",
+            "ApplyInBackground": location,
+            "Author": author,
+            "OperationType": "Replacing",
+            "ReplacingType": "Imported"
+        ]
+        let plistFile = try! PropertyListSerialization.data(fromPropertyList: plistdata, format: .xml, options: 0)
+        try! plistData.write(to: convertedPath.appendingPathComponent("Info.plist"))
     }
     
     static func export() {
