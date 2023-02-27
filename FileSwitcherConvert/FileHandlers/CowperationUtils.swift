@@ -22,7 +22,7 @@ class Cowperation {
         
         try! FileManager.default.moveItem(at: url, to: zipurl)
         try! Zip.unzipFile(zipurl, destination: FileManager.default.temporaryDirectory.appendingPathComponent("out"), overwrite: true, password: "")
-        cowDir = FileManager.default.temporaryDirectory.appendingPathComponent("out")
+        cowDir = FileManager.default.temporaryDirectory.appendingPathComponent("cow_\(UUID().uuidString)")
         UIApplication.shared.alert(title: "Imported!", body: "Saved in \(String(describing: cowDir))")
         Haptic.shared.notify(.success)
     }

@@ -65,7 +65,7 @@ class Fsp {
         
         
         try! Zip.unzipFile(zipurl, destination: FileManager.default.temporaryDirectory.appendingPathComponent("out"), overwrite: true, password: "aVBob25l5oyB44Gj44Gm6LuK5Lit5rOK44Gu5peF44Gr6KGM44GN44Gf44GE44Gq44CC44GC44Gj44Gf44GL44GE44Gf44G+44GU44KC6aOf44G544Gf44GE44GX44CC")
-        fspDir = FileManager.default.temporaryDirectory.appendingPathComponent("out")
+        fspDir = FileManager.default.temporaryDirectory.appendingPathComponent("fsp_\(UUID().uuidString)")
         UIApplication.shared.alert(title: "Imported!", body: "Saved in \(String(describing: fspDir))")
         Haptic.shared.notify(.success)
     }
