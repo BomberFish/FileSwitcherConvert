@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 import Zip
-import ZipFoundation
+import ZIPFoundation
 
 class Fsp {
     static func open(urls: [URL]) {
@@ -69,10 +69,8 @@ class Fsp {
     
     static func convert() {
         // FIXME: Crashes without file
-        UIApplication.shared.alert(title: "eta son", body: "")
         let infoPath = fspDir!.appendingPathComponent("Share/info.json")
         print(infoPath)
-        UIApplication.shared.alert(title: "", body: "Converting", animated: true)
         let infoJson = try? JSONSerialization.jsonObject(with: Data(contentsOf: infoPath)) as? [String: Any]
         print(infoJson as Any)
         let name = infoJson!["Name"] as? String
@@ -85,10 +83,10 @@ class Fsp {
         print(author as Any)
         let location = infoJson!["LocationRequire"] as? Bool
         print(location as Any)
-        let convertedPath = FileManager.default.temporaryDirectory.appendingPathComponent("cow_from_fsp\(UUID().uuidString)")
-        try! FileManager.default.createDirectory(at: convertedPath, withIntermediateDirectories: true)
-        try! FileManager.default.copyItem(at: fspDir!.appendingPathComponent("Files/\(id ?? "")/Default"), to: convertedPath.appendingPathComponent(".backup"))
-        try! FileManager.default.copyItem(at: fspDir!.appendingPathComponent("Files/\(id ?? "")/Replace"), to: convertedPath.appendingPathComponent("Replace.file"))
+        convertedCowDir = FileManager.default.temporaryDirectory.appendingPathComponent("cow_from_fsp_\(UUID().uuidString)")
+        try! FileManager.default.createDirectory(at: convertedCowDir!, withIntermediateDirectories: true)
+        try! FileManager.default.copyItem(at: fspDir!.appendingPathComponent("Share/Files/\(id ?? "")/Default"), to: convertedCowDir!.appendingPathComponent(".backup"))
+        try! FileManager.default.copyItem(at: fspDir!.appendingPathComponent("Share/Files/\(id ?? "")/Replace"), to: convertedCowDir!.appendingPathComponent("Replace.file"))
         // TODO: Support more operation types
         let plistdata: [String:Any] = [
             "FilePath":targetFile,
@@ -99,10 +97,16 @@ class Fsp {
             "ReplacingType": "Imported"
         ]
         let plistFile = try! PropertyListSerialization.data(fromPropertyList: plistdata, format: .xml, options: 0)
-        try! plistData.write(to: convertedPath.appendingPathComponent("Info.plist"))
+        try! plistFile.write(to: convertedCowDir!.appendingPathComponent("Info.plist"))
     }
     
     static func export() {
-        UIApplication.shared.alert(title: "eta son", body: "")
+        do {
+            try FileManager().zipItem(at: convertedCowDir!, to: (convertedCowDir?.appendingPathExtension("cowperation"))!)
+            let vc = UIActivityViewController(activityItems: [convertedCowDir?.appendingPathExtension("cowperation") as Any], applicationActivities: nil)
+            UIApplication.shared.windows[0].rootViewController?.present(vc, animated: true)
+        } catch {
+            UIApplication.shared.alert(body: "There was an error exporting the file.")
+        }
     }
 }

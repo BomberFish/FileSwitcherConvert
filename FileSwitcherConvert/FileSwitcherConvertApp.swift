@@ -9,6 +9,8 @@ import SwiftUI
 
 var fspDir = URL.init(string: "")
 var cowDir = URL.init(string: "")
+var convertedCowDir = URL.init(string: "")
+var convertedFspDir = URL.init(string: "")
 
 @main
 struct FileSwitcherConvertApp: App {
