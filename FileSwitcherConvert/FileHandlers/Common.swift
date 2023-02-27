@@ -9,11 +9,5 @@ import Foundation
 import FilePicker
 
 struct Common {
-    static func fileFromPicker(fileType: String) -> URL {
-        var url = URL.init(string: "")
-        FilePicker(types: [.init(filenameExtension: fileType)!], allowMultiple: false, title: "Pick an operation", onPicked: {urls in
-            url = urls.first
-        })
-        return url!
-    }
+    // owo what's this
 }

@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+import Zip
+import FilePicker
 
 struct ContentView: View {
     let appVersion = ((Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "Unknown") + " (" + (Bundle.main.infoDictionary?["CFBundleVersion"] as? String ?? "Unknown") + ")")
@@ -13,9 +15,8 @@ struct ContentView: View {
         NavigationView {
             List {
                 Section {
-                    Button(action: {
-                        Cowperation.open()
-                    }, label: {
+                    FilePicker(types: [.init(filenameExtension: "cowperation")!], allowMultiple: false, onPicked: { urls in
+                        Cowperation.open(urls: urls)}, label: {
                         Label("Import .cowperation", systemImage: "square.and.arrow.down")
                     })
                     Button(action: {
@@ -29,8 +30,8 @@ struct ContentView: View {
                 }
                 
                 Section {
-                    Button(action: {
-                        Fsp.open()
+                    FilePicker(types: [.init(filenameExtension: "fsp")!], allowMultiple: false, onPicked: { urls in
+                        Fsp.open(urls: urls)
                     }, label: {
                         Label("Import .fsp", systemImage: "square.and.arrow.down")
                     })

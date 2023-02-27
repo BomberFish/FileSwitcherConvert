@@ -7,6 +7,9 @@
 
 import SwiftUI
 
+var fspDir = URL.init(string: "")
+var cowDir = URL.init(string: "")
+
 @main
 struct FileSwitcherConvertApp: App {
     var body: some Scene {
