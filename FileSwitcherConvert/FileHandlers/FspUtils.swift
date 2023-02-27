@@ -71,7 +71,13 @@ class Fsp {
     }
     
     static func convert() {
+        // FIXME: Crashes without file
         UIApplication.shared.alert(title: "eta son", body: "")
+        let infoPath = fspDir!.appendingPathComponent("Share/info.json")
+        print(infoPath)
+        let infoData = try? JSONSerialization.jsonObject(with: Data(contentsOf: infoPath))
+        // FIXME: Returns nil.
+        print(infoData)
     }
     
     static func export() {
