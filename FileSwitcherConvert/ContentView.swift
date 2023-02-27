@@ -15,25 +15,15 @@ struct ContentView: View {
         NavigationView {
             List {
                 Section {
-                    FilePicker(types: [.init(filenameExtension: "cowperation")!], allowMultiple: false, onPicked: { urls in
-                        Cowperation.open(urls: urls)}, label: {
-                        Label("Import .cowperation", systemImage: "square.and.arrow.down")
-                    })
-                    Button(action: {
-                        Cowperation.export()
-                    }, label: {
-                        Label("Export .cowperation", systemImage: "square.and.arrow.up")
-                    })
-                    
-                } header: {
-                    Label("Cowabunga", systemImage: "doc.zipper")
-                }
-                
-                Section {
                     FilePicker(types: [.init(filenameExtension: "fsp")!], allowMultiple: false, onPicked: { urls in
                         Fsp.open(urls: urls)
                     }, label: {
                         Label("Import .fsp", systemImage: "square.and.arrow.down")
+                    })
+                    Button(action: {
+                        Fsp.convert()
+                    }, label: {
+                        Label("Convert to .cowperation", systemImage: "arrow.triangle.2.circlepath")
                     })
                     Button(action: {
                         Fsp.export()
@@ -43,6 +33,25 @@ struct ContentView: View {
                     
                 } header: {
                     Label("FileSwitcherPro", systemImage: "doc.zipper")
+                }
+                Section {
+                    FilePicker(types: [.init(filenameExtension: "cowperation")!], allowMultiple: false, onPicked: { urls in
+                        Cowperation.open(urls: urls)}, label: {
+                        Label("Import .cowperation", systemImage: "square.and.arrow.down")
+                    })
+                    Button(action: {
+                        Cowperation.convert()
+                    }, label: {
+                        Label("Convert to .fsp (why)", systemImage: "arrow.triangle.2.circlepath")
+                    })
+                    Button(action: {
+                        Cowperation.export()
+                    }, label: {
+                        Label("Export .cowperation", systemImage: "square.and.arrow.up")
+                    })
+                    
+                } header: {
+                    Label("Cowabunga", systemImage: "doc.zipper")
                 }
                 
                 Section {

@@ -69,6 +69,11 @@ class Fsp {
         UIApplication.shared.alert(title: "Imported!", body: "Saved in \(String(describing: fspDir))")
         Haptic.shared.notify(.success)
     }
+    
+    static func convert() {
+        
+    }
+    
     static func export() {
         // write to disk
     }

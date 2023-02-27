@@ -11,6 +11,8 @@ import UIKit
 
 class Cowperation {
     static func open(urls: [URL]) {
+        Haptic.shared.notify(.warning)
+        UIApplication.shared.alert(title: "Warning:", body: "Cowperation importing is WIP.")
         guard let url = urls.first else { return }
         let zipurl = url.deletingPathExtension().appendingPathExtension("zip")
         do{
