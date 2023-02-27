@@ -74,18 +74,16 @@ class Fsp {
         UIApplication.shared.alert(title: "", body: "Converting", animated: true)
         let infoJson = try? JSONSerialization.jsonObject(with: Data(contentsOf: infoPath)) as? [String: Any]
         print(infoJson as Any)
-        if let name = infoJson!["Name"] as? String {
-            print(name)
-        }
-        if let targetFile = infoJson!["TargetFilePath"] as? String {
-            print(targetFile)
-        }
-        if let uuid = infoJson!["ID"] as? String {
-            print(uuid)
-        }
-        try! FileManager.default.createDirectory(at: FileManager.default.temporaryDirectory.appendingPathComponent("cow_from_fsp\(UUID().uuidString)"), withIntermediateDirectories: true)
+        let name = infoJson!["Name"] as? String
+        print(name as Any)
+        let targetFile = infoJson!["TargetFilePath"] as? String
+        print(targetFile as Any)
+        let id = infoJson!["ID"] as? String
+        print(id as Any)
         let convertedPath = FileManager.default.temporaryDirectory.appendingPathComponent("cow_from_fsp\(UUID().uuidString)")
-        
+        try! FileManager.default.createDirectory(at: convertedPath, withIntermediateDirectories: true)
+        try! FileManager.default.copyItem(at: fspDir!.appendingPathComponent("Files/\(id ?? "")/Default"), to: convertedPath.appendingPathComponent(".backup"))
+        try! FileManager.default.copyItem(at: fspDir!.appendingPathComponent("Files/\(id ?? "")/Replace"), to: convertedPath.appendingPathComponent("Replace.file"))
     }
     
     static func export() {
