@@ -14,10 +14,10 @@ class Fsp {
         // thx suslocation for fsp code
         guard let url = urls.first else { return }
         let zipurl = url.deletingPathExtension().appendingPathExtension("zip")
-        do{
+        do {
             try FileManager.default.removeItem(at: zipurl)
             
-        }catch{ print("lol") }
+        } catch { print("lol") }
         
         try! FileManager.default.moveItem(at: url, to: zipurl)
         
@@ -25,9 +25,6 @@ class Fsp {
          hello dev over there who is curious how this code works!
          yes LMFAO it's just a zip wrapper
          but don't tell anyone ;)
-         
-         
-         
          
          ⠀⠀⠘⡀⠀⠀⠀⠀⠀⠀⠀gotcha, will⠀⠀⠀⠀⡜⠀⠀⠀
          ⠀⠀⠀⠑⡀⠀⠀keep it a secret⠀⠀⠀⡔⠁⠀⠀⠀
@@ -74,9 +71,21 @@ class Fsp {
         UIApplication.shared.alert(title: "eta son", body: "")
         let infoPath = fspDir!.appendingPathComponent("Share/info.json")
         print(infoPath)
-        let infoData = try? JSONSerialization.jsonObject(with: Data(contentsOf: infoPath))
-        // FIXME: Returns nil.
-        print(infoData)
+        UIApplication.shared.alert(title: "", body: "Converting", animated: true)
+        let infoJson = try? JSONSerialization.jsonObject(with: Data(contentsOf: infoPath)) as? [String: Any]
+        print(infoJson as Any)
+        if let name = infoJson!["Name"] as? String {
+            print(name)
+        }
+        if let targetFile = infoJson!["TargetFilePath"] as? String {
+            print(targetFile)
+        }
+        if let uuid = infoJson!["ID"] as? String {
+            print(uuid)
+        }
+        try! FileManager.default.createDirectory(at: FileManager.default.temporaryDirectory.appendingPathComponent("cow_from_fsp\(UUID().uuidString)"), withIntermediateDirectories: true)
+        let convertedPath = FileManager.default.temporaryDirectory.appendingPathComponent("cow_from_fsp\(UUID().uuidString)")
+        
     }
     
     static func export() {
